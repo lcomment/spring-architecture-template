@@ -11,6 +11,15 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.6.0"
 }
 
+module(":service-api", "apps/service-api")
+
+module(":first-domain", "domain/first-domain")
+module(":second-domain", "domain/second-domain")
+module(":third-domain", "domain/third-domain")
+
+module(":rag", "libs/ai/rag")
+module(":security", "libs/security")
+
 dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
