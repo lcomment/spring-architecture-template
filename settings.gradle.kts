@@ -20,6 +20,7 @@ module(":third-domain", "domain/third-domain")
 module(":ai", "libs/infra/ai")
 module(":database", "libs/infra/database")
 module(":security", "libs/security")
+module(":common", "libs/common")
 
 dependencyResolutionManagement {
     versionCatalogs {
