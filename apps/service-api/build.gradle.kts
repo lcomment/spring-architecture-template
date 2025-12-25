@@ -5,6 +5,7 @@ dependencies {
     implementation(project(":first-domain"))
     implementation(project(":second-domain"))
     implementation(project(":third-domain"))
+    implementation(project(":database"))
 
     implementation(libs.spring.boot.starter.web)
 }

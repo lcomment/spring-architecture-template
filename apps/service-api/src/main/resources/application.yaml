@@ -7,3 +7,27 @@ jwt:
 oauth:
   kakao:
     public-key-info: https://kauth.kakao.com/.well-known/jwks.json
+
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-1-ap-southeast-2.pooler.supabase.com:6543/postgres
+    username: postgres.yetashissrtrcdukgnqy
+    password: timote123!!
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: false
+    open-in-view: false
+
+  sql:
+    init:
+      mode: never
+
+server:
+  port: 8081
