@@ -1,0 +1,9 @@
+jwt:
+  access-header: Authorization
+  refresh-header: Refresh
+  grant-type: Bearer
+  user-key: USER
+
+oauth:
+  kakao:
+    public-key-info: https://kauth.kakao.com/.well-known/jwks.json
