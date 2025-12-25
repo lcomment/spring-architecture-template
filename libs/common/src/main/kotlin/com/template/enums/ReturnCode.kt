@@ -12,6 +12,7 @@ enum class ReturnCode(
     WRONG_JWT_TOKEN("1101", "잘못된 jwt 토큰입니다."),
     EXPIRED_JWT_TOKEN("1102", "만료된 jwt 토큰입니다."),
     EMPTY_AUTH_JWT("1103", "인증 정보가 비어있는 jwt 토큰입니다."),
+    INVALID_KEY("1104", "잘못된 key 입니다"),
 
     // 클라이언트 에러
     WRONG_PARAMETER("9000", "잘못된 파라미터 입니다."),
