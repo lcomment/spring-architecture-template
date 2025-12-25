@@ -17,7 +17,8 @@ module(":first-domain", "domain/first-domain")
 module(":second-domain", "domain/second-domain")
 module(":third-domain", "domain/third-domain")
 
-module(":rag", "libs/ai/rag")
+module(":ai", "libs/infra/ai")
+module(":database", "libs/infra/database")
 module(":security", "libs/security")
 
 dependencyResolutionManagement {

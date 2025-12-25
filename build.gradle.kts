@@ -28,6 +28,12 @@ allprojects {
         mavenCentral()
     }
 
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(21))
+        }
+    }
+
     kotlin {
         compilerOptions {
             apiVersion = KotlinVersion.KOTLIN_1_9
@@ -54,12 +60,12 @@ allprojects {
             events = setOf(FAILED)
         }
     }
-}
 
-tasks.named<BootJar>("bootJar") {
-    enabled = false
-}
+    tasks.named<BootJar>("bootJar") {
+        enabled = false
+    }
 
-tasks.named<Jar>("jar") {
-    enabled = true
+    tasks.named<Jar>("jar") {
+        enabled = true
+    }
 }
